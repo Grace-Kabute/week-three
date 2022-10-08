@@ -1,0 +1,73 @@
+.container-fluid {
+    background-color: rgb(133, 128, 128);
+    border: 1px black solid;
+}
+
+.navbar {
+    background-color: gray;
+    border: 1px black solid;
+}
+
+.navbar-nav {
+    margin-top: 1rem;
+    background-color: white;
+}
+
+.nav-item {
+    text-align: center;
+    border: 2px solid black;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    color: black;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid {
+    color: black;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 'one' 'two' 'three';
+    grid-auto-columns: 1fr;
+}
+
+.chicken {
+    grid-area: one;
+    background-color: rgb(171, 165, 165);
+}
+
+.beef {
+    grid-area: two;
+    background-color: rgb(177, 174, 174);
+}
+
+.sushi {
+    grid-area: three;
+    background-color: rgb(172, 167, 167);
+}
+
+.grid {
+    grid-template-areas: 'one' 'two' 'three';
+}
+
+@media(min-width:750px) {
+    .navbar-nav {
+        display: none;
+    }
+}
+
+@media(min-width:800px) {
+    .grid {
+        grid-template-areas: 'one two three';
+    }
+    .scroll {
+        visibility: hidden;
+    }
+}
